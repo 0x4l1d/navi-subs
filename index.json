@@ -1,0 +1,58 @@
+[
+  {
+    "manifestVersion": 2,
+    "deprecated": false,
+    "name": "Navi Subs",
+    "version": "1.0.0",
+    "description": "Arabic subtitles from Mirai Anime, best match first. SubDL and SubSource join in when you add your own key.",
+    "id": "navi-subs",
+    "type": "subtitle",
+    "accuracy": "high",
+    "icon": "https://raw.githubusercontent.com/0x4l1d/navi-subs/main/icon.png",
+    "media": "sub",
+    "languages": [
+      "SA"
+    ],
+    "url": "aHR0cHM6Ly9taXJhaWFuaW1lLm5ldA==",
+    "update": "https://raw.githubusercontent.com/0x4l1d/navi-subs/main/index.json",
+    "code": "https://raw.githubusercontent.com/0x4l1d/navi-subs/main/dist/navi-subs.js",
+    "options": {
+      "maxFiles": {
+        "type": "number",
+        "description": "Most subtitle files to give for one episode",
+        "default": 3
+      },
+      "fonts": {
+        "type": "boolean",
+        "description": "Give the subtitles a built-in Arabic font in place of their own. Turn it off if your device already has the fonts they use",
+        "default": true
+      },
+      "release": {
+        "type": "select",
+        "description": "Prefer subtitles timed for this kind of release",
+        "values": [
+          "Any",
+          "BD",
+          "WEB",
+          "TV"
+        ],
+        "default": "Any"
+      },
+      "hideOtherSeasons": {
+        "type": "boolean",
+        "description": "Leave out subtitles that belong to another season or part",
+        "default": true
+      },
+      "subdlKey": {
+        "type": "string",
+        "description": "Your own SubDL key (subdl.com/panel/api). Leave empty to skip SubDL",
+        "default": ""
+      },
+      "subsourceKey": {
+        "type": "string",
+        "description": "Your own SubSource key (subsource.net, My Profile). Leave empty to skip SubSource",
+        "default": ""
+      }
+    }
+  }
+]
